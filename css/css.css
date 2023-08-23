@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    height: 100%;
+}
+
+#main {
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.col-A {
+    flex: 0 0 55%;
+    max-width: 55%;
+}
+
+.content {
+    padding: 50px 145px 0 200px;
+}
+
+.content .logo {
+    margin-bottom: 145px;
+}
+
+.content .content_form {
+    max-width: 425px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.content .content_form h1 {
+    color: hsl(0, 6%, 24%);
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    line-height: 75px;
+}
+
+.content .content_form h1 span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    display: flex;
+    width: 100%;
+}
+
+.content .content_form p {
+    color:  hsl(0, 36%, 70%);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.content .content_form form {
+    position: relative;
+}
+
+.content .content_form form input {
+    border: 1px solid hsl(0, 6%, 24%);
+    border-radius: 35px;
+    width: 92%;
+    height: 50px;
+    transition: .2s ease;
+    padding: 8px 35px;
+    opacity: .4;
+    font-size: 16px;
+}
+
+.content .content_form form input:focus {
+    border: none;
+    outline: 2px solid hsl(0, 93%, 68%);
+    opacity: 1;
+}
+
+.content .content_form form button {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: -12px;
+    cursor: pointer;
+}
+
+.content .content_form form button:hover {
+    filter: contrast(1.7);
+}
+
+.content .content_form form button span {
+    background-image: url('../images/icon-arrow.svg');
+    background-repeat: no-repeat;
+    display: block;
+    width: 12px;
+    height: 20px;
+}
+
+.col-B {
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
+.col-B img {
+    width: 100%;
+    max-width: 100%;
+    /* height: auto; */
+    object-fit: cover;
+    height: 100%;
+}
+
+
+
+/* Chall infos & links */
+.attribution {
+    color: #fff;
+    background: rgb(76 66 241);
+    font-size: 14px; 
+    text-align: center; 
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+.attribution a {
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.attribution a:hover {
+    font-size: 16px;
+    transition: 0.5s ease;
+}
