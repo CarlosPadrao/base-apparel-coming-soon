@@ -1,13 +1,19 @@
-const btn = document.querySelector('button');
+const inputBtn = document.querySelector('input');
+const emailVer = document.querySelector('.email-verification')
 
-btn.addEventListener('click', () => {
-    let inputBtnValue = document.querySelector('input').value
+
+inputBtn.addEventListener('change', () => {
+    let inputBtnValue = document.querySelector('input').value;
     var regex = /\S+@\S+\.\S+/;
     var condicao = regex.test(inputBtnValue);
 
     if (condicao == true) {
-        window.alert('OK: Email válido')
+        emailVer.classList.add('__ok');
+        emailVer.classList.remove('hide');
+        emailVer.textContent = "Valid email";
     } else {
-        window.alert('ERROR: Email inválido')
+        emailVer.classList.remove('hide');
+        emailVer.classList.remove('__ok');
+        emailVer.textContent = "Please provide a válid email"
     }
 });
